@@ -303,7 +303,7 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_campoNombreActionPerformed
 
     private void campoRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoRegistrarActionPerformed
-        // TODO add your handling code here
+        registrarBoletin();
     }//GEN-LAST:event_campoRegistrarActionPerformed
 
     /**
