@@ -457,6 +457,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Ver todos"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campoVerTodosActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

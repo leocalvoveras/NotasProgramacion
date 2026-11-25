@@ -245,6 +245,7 @@ public class Ventana extends javax.swing.JFrame {
         campoVerTodos.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         campoVerTodos.setForeground(new java.awt.Color(0, 0, 0));
         campoVerTodos.setText("Ver todos");
+        campoVerTodos.addActionListener(this::campoVerTodosActionPerformed);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -305,6 +306,10 @@ public class Ventana extends javax.swing.JFrame {
     private void campoRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoRegistrarActionPerformed
         registrarBoletin();
     }//GEN-LAST:event_campoRegistrarActionPerformed
+
+    private void campoVerTodosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoVerTodosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoVerTodosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -460,6 +465,21 @@ public class Ventana extends javax.swing.JFrame {
         campoGlobalJava.setText("");
         campoGlobalCsharp.setText("");
         campoNotaTotalProgramacion.setText("");
+    }
+    
+    public void verTodos () {
+        
+        if (boletines.isEmpty()){
+            
+            JOptionPane.showMessageDialog(this, "No hay boletines registrados");
+            return;
+        }
+        
+        campoFicha.setText("-- Listado de boletines --");
+        
+        for (int i=0; i<boletines.size(); i++) {
+            campoFicha.append(boletines.get(i).toString());
+        }
     }
 }////////
 
