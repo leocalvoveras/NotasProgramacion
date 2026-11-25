@@ -467,7 +467,7 @@ public class Ventana extends javax.swing.JFrame {
         campoNotaTotalProgramacion.setText("");
     }
     
-    public void verTodos () {
+    public void campoVerTodos () {
         
         if (boletines.isEmpty()){
             
