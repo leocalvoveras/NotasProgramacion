@@ -112,6 +112,7 @@ public class Ventana extends javax.swing.JFrame {
 
         campoGlobalJava.setEditable(false);
         campoGlobalJava.setBackground(new java.awt.Color(255, 0, 0));
+        campoGlobalJava.addActionListener(this::campoGlobalJavaActionPerformed);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel9.setText("Global");
@@ -310,6 +311,10 @@ public class Ventana extends javax.swing.JFrame {
     private void campoVerTodosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoVerTodosActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoVerTodosActionPerformed
+
+    private void campoGlobalJavaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoGlobalJavaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campoGlobalJavaActionPerformed
 
     /**
      * @param args the command line arguments
